@@ -1,7 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap');
+
 .App {
-  text-align: center;
+  width: 100%;
+  height: 100vh;
+  background-color: hsl(36, 100%, 99%);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
 
+.navbar {
+  width: 70%;
+  height: 10%;
+  display: grid;
+  /* column-gap: 2%; */
+  grid-template-columns: 58% 8% 8% 8% 8% 10% ;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #fff; */
+  margin-top: 2%;
+  color: hsl(236, 13%, 42%);
+}
+
+.item {
+  display: grid;
+  justify-content: flex-end;
+  align-items: center;
+  cursor: pointer;
+}
+
+.item:hover{  
+  color: hsl(35, 77%, 62%);
+}
+
+.wrapper {
+  width: 70%;
+  height: 55%;
+  display: grid;
+  column-gap: 2%;
+  grid-template-columns: 64% 34% ;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #0d2127; */
+}
+
+.left {
+  width: 100%;
+  height: 100%; 
+  display: grid;
+  grid-template-rows: 66% 40% ;
+}
+
+.left1 {
+  width: 100%;
+  height: 100%; 
+  background-image: url('../src/assets/image-web-3-desktop.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-color: #61dafb; */
+}
+
+.left2 {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  column-gap: 2%;
+  grid-template-columns: 40% 49%;
+  justify-content: flex-start;
+  align-items: center;
+  /* background-color: #e60b0b; */
+}
+
+.bright {
+  width: 100%;
+  height: 80%;
+  height: fit-content ;
+  color: hsl(240, 100%, 5%);
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 53px;
+  letter-spacing: 2px;
+  line-height:90%;
+}
+
+.readMore {
+  width: 100%;
+  height: 80%;
+  font-family: 'Inter', sans-serif;
+  display: grid;
+  /* column-gap: 2%; */
+  grid-template-rows: 60% 30%;
+  font-weight: 400;
+  /* background-color: #1d1010; */
+}
+
+.readBody {
+  width: 90%;
+  color: hsl(236, 13%, 42%);
+  font-size: 16px;
+}
+
+.button {
+  width: 50%;
+  background-color: hsl(5, 85%, 63%);
+  letter-spacing: 3px;
+  border: none;
+  color: hsl(36, 100%, 99%);
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.button:hover {
+  background-color: hsl(240, 100%, 5%);
+}
+
+.right {
+  width: 100%;
+  height: 100%; 
+  background-color: hsl(240, 100%, 5%);
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  height: 80%; 
+  background-color: hsl(240, 100%, 5%);
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.news {
+  width: 80%;
+  height: fit-content ;
+  color: hsl(35, 77%, 62%);
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.newsWrapper {
+  width: 80%;
+  height: 35%;
+  /* margin-top: 5%; */
+  display: grid;
+  grid-template-rows: 50% 50%;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid gray;
+}
+
+.title {
+  height: fit-content ;
+  color: hsl(36, 100%, 99%);
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.title:hover {  
+  color: hsl(35, 77%, 62%);
+}
+
+.body {  
+  height: 100% ;
+  /* background-color: #fff; */
+  color: hsl(233, 8%, 79%);
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.bottomWrapper {
+  width: 70%;
+  height: 25%;
+  display: grid;
+  justify-content: space-between;
+  align-items: center;
+  grid-template-columns: 31% 31% 31% ;
+  /* background-color: aliceblue; */
+
+}
+
+.bottomItem{
+  height: 100%;
+  background-color: aquamarine;
+  display: grid;
+  align-items: center;
+}
+
+.imagine {
+  height: 70%;
+}
+/* Soft orange: hsl(35, 77%, 62%)
+- Soft red: hsl(5, 85%, 63%)
+
+### Neutral
+
+Off-white: hsl(36, 100%, 99%)
+Grayish blue: hsl(233, 8%, 79%)
+Dark grayish blue: hsl(236, 13%, 42%)
+Very dark blue: hsl(240, 100%, 5%) */
 .App-logo {
   height: 40vmin;
   pointer-events: none;
