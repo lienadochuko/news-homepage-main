@@ -79,7 +79,7 @@
   color: hsl(240, 100%, 5%);
   font-family: 'Inter', sans-serif;
   font-weight: 700;
-  font-size: 53px;
+  font-size: 50px;
   letter-spacing: 2px;
   line-height:90%;
 }
@@ -90,19 +90,24 @@
   font-family: 'Inter', sans-serif;
   display: grid;
   /* column-gap: 2%; */
-  grid-template-rows: 60% 30%;
+  grid-template-rows: 60% 40%;
   font-weight: 400;
   /* background-color: #1d1010; */
 }
 
 .readBody {
-  width: 90%;
+  width: 95%;
   color: hsl(236, 13%, 42%);
   font-size: 16px;
 }
 
 .button {
+  height: 80%;
   width: 50%;
+  display: grid;
+  align-self: flex-end;
+  justify-content: center;
+  align-items: center;
   background-color: hsl(5, 85%, 63%);
   letter-spacing: 3px;
   border: none;
@@ -184,6 +189,7 @@
   height: 25%;
   display: grid;
   justify-content: space-between;
+  font-family: 'Inter', sans-serif;
   align-items: center;
   grid-template-columns: 31% 31% 31% ;
   /* background-color: aliceblue; */
@@ -192,54 +198,89 @@
 
 .bottomItem{
   height: 100%;
-  background-color: aquamarine;
   display: grid;
   align-items: center;
+  font-family: 'Inter', sans-serif;
+  grid-template-columns: 35% 60% ;
 }
 
 .imagine {
+  height: 60%;
+}
+
+.bottomContainer {
   height: 70%;
-}
-/* Soft orange: hsl(35, 77%, 62%)
-- Soft red: hsl(5, 85%, 63%)
-
-### Neutral
-
-Off-white: hsl(36, 100%, 99%)
-Grayish blue: hsl(233, 8%, 79%)
-Dark grayish blue: hsl(236, 13%, 42%)
-Very dark blue: hsl(240, 100%, 5%) */
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+  width: 100%;
+  display: grid;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: flex-end;
+  font-family: 'Inter', sans-serif;
+  grid-template-rows: 30% 20% 50% ;
+
 }
 
-.App-link {
-  color: #61dafb;
+.bottomNumber {
+  font-family: 'Inter', sans-serif;
+  font-weight: 800;
+  font-size: 30px;
+  color: hsl(233, 8%, 79%);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.bottomTitle {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: hsl(240, 100%, 5%);
+}
+
+
+.bottomTitle:hover {  
+  color: hsl(35, 77%, 62%);
+}
+
+.bottomBody{
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: hsl(236, 13%, 42%);
+}
+
+.menuIcon {
+  display: none;
+}
+
+@media only screen and (max-width: 540px) {
+
+  .App {
+    height: fit-content;
   }
-  to {
-    transform: rotate(360deg);
+  .item {
+    display: none;
+  }
+
+  .navbar {
+    width: 70%;
+    height: 10%;
+    display: grid;
+    column-gap: 30%;
+    grid-template-columns: 58% 10% ;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #fff; */
+    margin-top: 2%;
+    color: hsl(236, 13%, 42%);
+  }
+
+  .menuIcon {
+    display: flex;
+  }
+
+  .menu{
+    width: 70%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    right: 0;
+    background-color: hsl(36, 100%, 99%);    
   }
 }
