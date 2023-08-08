@@ -25,8 +25,10 @@ function App() {
         <div className='item'>Categories</div>
 
         <img src={menuopen} alt="menuIcon" className="menuIcon" onClick={open}/>              
-        <div className="menu" style={{display: menu ? 'flex' : 'none'}}> 
-            <img src={close} alt="closeIcon" className="close" onClick={open}/>
+        <div className="menu" style={{display: menu ? 'grid' : 'none'}}> 
+        <div className='imgHold'>          
+        <img src={close} alt="closeIcon" className="close" onClick={open}/>
+        </div>
             <div className="boxhold">
             <div className="box">Home</div>
             <div className="box">News</div>
