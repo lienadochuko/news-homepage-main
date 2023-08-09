@@ -42,7 +42,7 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 ### Links
 
 - Solution URL: [news-homepage-main](https://github.com/lienadochuko/news-homepage-main)
-<!-- - Live Site URL: [Add live site URL here](https://your-live-site-url.com) -->
+- Live Site URL: [news-homepage-main](https://news-homepage-main-ashy.vercel.app/)
 
 ## My process
 
